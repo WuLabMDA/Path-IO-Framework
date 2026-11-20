@@ -59,11 +59,28 @@ pip install -r requirements.txt
 
 Open the individual module READMEs for inputs, processing details, and commands. The TCGA tutorial provides an example workflow. Native OpenSlide libraries and adequate disk space are required for large WSIs.
 
-## Pretrained models — controlled access
+## 🔒 Pretrained Models — Controlled Access
 
-**Model weights are not publicly distributed.** This includes the trained UNI tissue classifier, the survival CNN checkpoints, the locked Fisher-RSF artifact, and the composite survival model. Researchers may request access from the corresponding authors, providing their institutional affiliation and a brief description of intended research use. Requests are considered in accordance with applicable institutional policies and third-party model licenses.
+The pretrained model weights associated with Path-IO are deposited in Zenodo under restricted access to support reproducible computational pathology research.
 
-The code and tutorial require compatible pretrained models to perform inference. The four CNN outputs must match the locked Fisher-RSF feature order and preprocessing metadata. The repository does not contain the original clinical training datasets or CT prediction model.
+The model collection includes:
+
+- **Tissue classification:** UNI-based eight-class tissue classifier.
+- **Deep learning survival models:** Pretrained ResNet18, ResNet34, ResNet50, and ResNeXt50 models for patch-level risk prediction.
+- **Patient-level survival prediction:** Random survival forest (RSF) model.
+- **Multimodal integration:** Composite survival model integrating CT-derived, Path-IO, and clinical predictors.
+
+**Model repository:** [Path-IO Pretrained Models — Zenodo](https://doi.org/10.5281/zenodo.24408066)
+
+### Requesting Model Access
+
+Researchers interested in obtaining the pretrained models can visit the Zenodo record and select **Request access**.
+
+Please provide your name, institutional affiliation, institutional email address, and a brief description of the intended research use.
+
+Access requests will be reviewed individually in accordance with applicable institutional policies. Model files are not publicly downloadable.
+
+Once access is approved, researchers can download the pretrained models and use them with the source code and inference tutorials provided in this repository.
 
 ## Interpretation and evaluation
 
