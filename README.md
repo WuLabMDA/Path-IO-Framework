@@ -12,6 +12,7 @@ Path-IO is a computational pathology framework for survival risk prediction in p
 <p align="center">
   <em>Overview of the Path-IO computational framework and study workflow.</em>
 </p>
+
 ## Computational workflow
 
 1. **WSI patch extraction and habitat mapping** — UNI feature extraction, eight-class tissue classification (background, bronchi, inflammatory/immune, normal lung, necrosis, stroma, tumor, vessel), GeoJSON contour processing, and habitat map reconstruction.
