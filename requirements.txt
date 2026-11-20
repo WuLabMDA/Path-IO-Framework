@@ -1,0 +1,17 @@
+# Install PyTorch appropriate for your operating system / CUDA separately.
+numpy
+pandas
+scikit-learn
+scikit-survival
+lifelines
+joblib
+Pillow
+opencv-python
+openslide-python
+openslide-bin
+timm
+shapely
+scikit-image
+matplotlib
+jupyter
+requests

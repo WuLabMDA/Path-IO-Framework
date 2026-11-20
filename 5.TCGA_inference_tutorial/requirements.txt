@@ -1,0 +1,5 @@
+# Install the matching requirements of Path-IO Modules 1–3 first.
+# This tutorial's additional helper scripts use:
+numpy
+pandas
+torch
