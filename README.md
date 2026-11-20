@@ -2,7 +2,7 @@
 
 **Pathology-Driven Immunotherapy Optimization**
 
-Path-IO is a computational pathology framework for survival risk prediction in patients with metastatic non–small cell lung cancer treated with immune checkpoint inhibitors. This repository contains the **source code and a TCGA-LUAD/LUSC inference tutorial**, but **does not distribute pretrained model weights or patient-level research datasets**.
+Path-IO is a computational pathology framework for survival risk prediction in patients with metastatic non–small cell lung cancer treated with immune checkpoint inhibitors. This repository contains the **source code and a TCGA-LUAD/LUSC inference tutorial**.
 ## Path-IO Pipeline
 
 <p align="center">
