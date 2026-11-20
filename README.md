@@ -17,7 +17,7 @@ Path-IO is a computational pathology framework for survival risk prediction in p
 
 1. **WSI patch extraction and habitat mapping** — UNI feature extraction, eight-class tissue classification (background, bronchi, inflammatory/immune, normal lung, necrosis, stroma, tumor, vessel), GeoJSON contour processing, and habitat map reconstruction.
 2. **WSI map preprocessing** — patient-level tissue packing, seven-channel one-hot habitat patch extraction (64 × 64, stride 32).
-3. **Survival prediction** — four pretrained CNN architectures (R18, R34, R50, RX50) for patch-level risks, GMM/Fisher vector aggregation, and a locked random survival forest for patient-level continuous risk.
+3. **Survival prediction** — four pretrained CNN architectures (R18, R34, R50, RX50) for patch-level risks and a locked random survival forest for patient-level continuous risk.
 4. **Multimodal integration** — a composite RSF model integrating Path-IO risk, precomputed CT-derived risk, and clinical predictors.
 5. **TCGA inference tutorial** — notebook for TCGA-LUAD/LUSC image download, clinical retrieval, inference, and survival evaluation (C-index, continuous-risk Cox HR, 95% CI, and P-value). No Kaplan–Meier plots.
 
@@ -91,13 +91,10 @@ Access requests will be reviewed individually in accordance with applicable inst
 
 Once access is approved, researchers can download the pretrained models and use them with the source code and inference tutorials provided in this repository.
 
-## Interpretation and evaluation
-
-Path-IO produces continuous survival risk scores. C-index and Cox hazard ratios, confidence intervals, and P-values require observed survival times and event indicators. TCGA-LUAD/LUSC are not equivalent to the ICI-treated metastatic NSCLC cohorts; tutorial results should not be described as validated immunotherapy treatment-benefit predictions.
 
 ## Research use and issues
 
-This implementation is for research, not clinical decision-making. Do not upload protected patient data or restricted models to issues or pull requests. Report reproducible software issues at https://github.com/WuLabMDA/Path-IO-Framework/issues.
+This implementation is for research, not clinical decision-making. Report reproducible software issues at https://github.com/WuLabMDA/Path-IO-Framework/issues.
 
 ## Citation and license
 
