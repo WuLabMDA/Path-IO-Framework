@@ -8,4 +8,4 @@ This module extracts H&E WSI tiles, obtains UNI features, classifies patches int
 - `inference/predict_tissue_classes.py`: tissue classification inference
 - `habitat_map_generation/generate_habitat_maps.py`: habitat map reconstruction
 
-**Model access:** UNI backbone and the trained eight-class classifier are **not included** in this public repository. Request access from the corresponding authors, subject to applicable model licenses and institutional policies. Follow the module-specific README and script `--help` for exact command options. Never upload patient data or model weights to the public repository.
+
