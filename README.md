@@ -21,16 +21,15 @@ This repository provides the **source code and a TCGA-LUAD/LUSC inference tutori
 
 ## Computational Workflow
 
-1. **WSI patch extraction and habitat mapping** — UNI feature extraction, eight-class tissue classification (background, bronchi, inflammatory/immune, normal lung, necrosis, stroma, tumor, vessel), GeoJSON contour processing, and habitat map reconstruction.
+1. **WSI patch extraction and habitat mapping** — UNI feature extraction, eight-class tissue classification (background, bronchi, inflammatory/immune, normal, necrosis, stroma, tumor, vessel) and habitat map reconstruction.
 
 2. **WSI map preprocessing** — Patient-level tissue packing and seven-channel one-hot habitat patch extraction (64 × 64 pixels, stride 32).
 
-3. **Survival prediction** — Four pretrained convolutional neural network (CNN) architectures (ResNet18, ResNet34, ResNet50, and ResNeXt50) for patch-level risk prediction, followed by Gaussian mixture model (GMM) and Fisher vector aggregation and a random survival forest (RSF) for patient-level continuous risk estimation.
+3. **Survival prediction** — Four pretrained convolutional neural network (CNN) architectures (ResNet18, ResNet34, ResNet50, and ResNeXt50) for patch-level risk prediction, followed by GFisher vector aggregation and a random survival forest (RSF) for patient-level continuous risk estimation.
 
 4. **Multimodal integration** — A composite RSF model integrating Path-IO risk, CT-derived risk generated using the [Deep-CT prognostic model](https://github.com/WuLabMDA/Deep_CT-prognostic-biomarker), and clinical predictors.
 
-5. **TCGA inference tutorial** — A notebook demonstrating TCGA-LUAD/LUSC image download, clinical data retrieval, model inference, and survival evaluation using the concordance index (C-index), continuous-risk Cox hazard ratios (HRs), 95% confidence intervals (CIs), and P-values. Kaplan–Meier plots are not included.
-
+5. **TCGA inference tutorial** — A notebook demonstrating TCGA-LUAD/LUSC image download, clinical data retrieval, model inference, and survival evaluation using the concordance index (C-index), continuous-risk Cox hazard ratios (HRs), 95% confidence intervals (CIs), and P-values.
 ## Repository Structure
 
 ```text
